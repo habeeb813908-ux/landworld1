@@ -1,0 +1,137 @@
+.service-detail-card {
+    background-color: #fff;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.service-detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
+}
+
+.service-info-row {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.service-main-info {
+    flex: 3;
+}
+
+.service-icon-large {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    margin-bottom: 25px;
+}
+
+.service-main-info h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.service-desc {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.service-meta {
+    background-color: var(--accent);
+    padding: 20px 25px;
+    border-radius: var(--radius);
+    border-left: 5px solid var(--primary);
+}
+
+.service-meta h4 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.who-needs p {
+    color: var(--text-main);
+    font-weight: 600;
+    margin: 0;
+}
+
+.service-benefits {
+    flex: 2;
+    background-color: #fafafa;
+    padding: 30px;
+    border-radius: var(--radius);
+}
+
+.service-benefits h4 {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.benefit-list {
+    margin-bottom: 30px;
+}
+
+.benefit-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.benefit-list li svg {
+    color: #2e7d32;
+    flex-shrink: 0;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.faq-section {
+    padding: 100px 0;
+}
+
+.faq-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.faq-item p {
+    color: var(--text-muted);
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .service-info-row {
+        flex-direction: column;
+        gap: 30px;
+        align-items: stretch;
+    }
+}

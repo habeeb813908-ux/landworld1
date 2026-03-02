@@ -1,0 +1,138 @@
+.page-header {
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/about-page-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.page-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.page-header p {
+    font-size: 1.25rem;
+    color: #ccc;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.mission-vision .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.mission-card,
+.vision-card,
+.values-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: var(--radius);
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.mission-card:hover,
+.vision-card:hover,
+.values-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+}
+
+.mission-vision h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.commitment-image img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.feature-list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.feature-list li {
+    margin-bottom: 25px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.feature-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.feature-list li strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 5px;
+}
+
+.bg-dark {
+    background-color: #212121;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.icon-primary {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .mission-vision .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

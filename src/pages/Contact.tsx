@@ -1,0 +1,197 @@
+import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
+import { Phone, Mail, MapPin, Send, MessageCircle } from 'lucide-react';
+import './Contact.css';
+
+const Contact: React.FC = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        service: 'RTK Digital Survey',
+        message: ''
+    });
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        // Simulate form submission
+        alert('Thank you for your inquiry! Our team will contact you shortly.');
+        setFormData({ name: '', phone: '', email: '', service: 'RTK Digital Survey', message: '' });
+    };
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    return (
+        <div className="contact-page">
+            <Helmet>
+                <title>Contact Us | Land World Digital Survey Kasaragod</title>
+                <meta name="description" content="Get in touch with Land World Digital Survey. Phone: 8848969743. Located at Souparnika Complex, Kuttikol, Kasaragod. Book your land survey today." />
+            </Helmet>
+
+            <section className="page-header">
+                <div className="container">
+                    <h1>Contact Us</h1>
+                    <p>Get a Professional Quote for Your Survey Project</p>
+                </div>
+            </section>
+
+            <section className="section contact-main">
+                <div className="container grid grid-2">
+                    <div className="contact-info animate">
+                        <h2>Get in <span className="highlight">Touch</span></h2>
+                        <p>Our team of professional surveyors is ready to assist you with any land measurement needs. Contact us directly or use the form to request a quote.</p>
+
+                        <div className="info-cards">
+                            <a href="tel:8848969743" className="info-card animate">
+                                <div className="icon-circle"><Phone /></div>
+                                <div className="info-content">
+                                    <h4>Call Us</h4>
+                                    <p>8848969743, 9072241523</p>
+                                </div>
+                            </a>
+                            <a href="mailto:landworlddigitalsurvey@gmail.com" className="info-card animate">
+                                <div className="icon-circle"><Mail /></div>
+                                <div className="info-content">
+                                    <h4>Email Us</h4>
+                                    <p>landworlddigitalsurvey@gmail.com</p>
+                                </div>
+                            </a>
+                            <div className="info-card animate">
+                                <div className="icon-circle"><MapPin /></div>
+                                <div className="info-content">
+                                    <h4>Visit Us</h4>
+                                    <p>Souparnika Complex, Kuttikol, Kasaragod, Kerala, India 671541</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="whatsapp-box animate">
+                            <h3>Quick Chat?</h3>
+                            <p>Message us directly on WhatsApp for instant responses.</p>
+                            <a href="https://wa.me/8848969743" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
+                                <MessageCircle size={20} /> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="contact-form-container animate">
+                        <form onSubmit={handleSubmit} className="contact-form">
+                            <h3>Send a Message</h3>
+                            <div className="form-group">
+                                <label htmlFor="name">Full Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    required
+                                    placeholder="Your Name"
+                                />
+                            </div>
+                            <div className="grid grid-2 form-row">
+                                <div className="form-group">
+                                    <label htmlFor="phone">Phone Number</label>
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        required
+                                        placeholder="Mobile Number"
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="email">Email (Optional)</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        placeholder="Your Email"
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="service">Service Required</label>
+                                <select id="service" name="service" value={formData.service} onChange={handleChange}>
+                                    <option>RTK Digital Survey</option>
+                                    <option>Boundary Survey</option>
+                                    <option>Land Measurement</option>
+                                    <option>Site Layout Marking</option>
+                                    <option>Property Demarcation</option>
+                                </select>
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="message">Project Details</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows={4}
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    required
+                                    placeholder="Describe your survey requirements..."
+                                ></textarea>
+                            </div>
+                            <button type="submit" className="btn btn-primary w-full">
+                                <Send size={18} /> Submit Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section className="map-full">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15582.5!2d75.1!3d12.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba470!2sSouparnika%20Complex%2C%20Kuttikol!5e0!3m2!1sen!2sin!4v1700000000000"
+                    width="100%"
+                    height="500"
+                    style={{ border: 0 }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    title="Land World Digital Survey Headquarters"
+                ></iframe>
+            </section>
+
+            {/* Schema Markup for Local Business */}
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "LocalBusiness",
+                    "name": "Land World Digital Survey",
+                    "image": "https://landworlddigitalsurvey.com/logo.png",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Souparnika Complex, Kuttikol",
+                        "addressLocality": "Kasaragod",
+                        "addressRegion": "Kerala",
+                        "postalCode": "671541",
+                        "addressCountry": "IN"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 12.5033,
+                        "longitude": 75.1111
+                    },
+                    "url": "https://landworlddigitalsurvey.com",
+                    "telephone": "8848969743",
+                    "openingHoursSpecification": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                            "opens": "09:00",
+                            "closes": "18:00"
+                        }
+                    ]
+                })}
+            </script>
+        </div>
+    );
+};
+
+export default Contact;
