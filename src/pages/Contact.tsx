@@ -167,7 +167,7 @@ const Contact: React.FC = () => {
                     "@context": "https://schema.org",
                     "@type": "LocalBusiness",
                     "name": "Land World Digital Survey",
-                    "image": "https://landworlddigitalsurvey.com/logo.png",
+                    "image": "https://landworldsurvey.com/logo.png",
                     "address": {
                         "@type": "PostalAddress",
                         "streetAddress": "Souparnika Complex, Kuttikol",
@@ -181,7 +181,7 @@ const Contact: React.FC = () => {
                         "latitude": 12.476483,
                         "longitude": 75.210323
                     },
-                    "url": "https://landworlddigitalsurvey.com",
+                    "url": "https://landworldsurvey.com",
                     "telephone": "+91 884 896 9743",
                     "openingHoursSpecification": [
                         {

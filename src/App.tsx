@@ -9,6 +9,8 @@ import About from './pages/About';
 import Services from './pages/Services';
 import ServiceAreas from './pages/ServiceAreas';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
+
 
 // Components
 import Layout from './components/Layout';
@@ -27,6 +29,8 @@ const App: React.FC = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/service-areas" element={<ServiceAreas />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+
           </Routes>
         </Layout>
         <WhatsAppButton />
