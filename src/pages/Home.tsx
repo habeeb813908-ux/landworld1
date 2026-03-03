@@ -9,7 +9,7 @@ const Home: React.FC = () => {
         <div className="home-page">
             <Helmet>
                 <title>Land World Digital Survey | Accurate RTK Land Survey in Kasaragod</title>
-                <meta name="description" content="Professional RTK Digital Land Survey services in Kasaragod, Kerala. Accurate boundary & land measurement solutions since 2010. Book your survey now! Call 8848969743." />
+                <meta name="description" content="Professional RTK Digital Land Survey services in Kasaragod, Kerala. Accurate boundary & land measurement solutions since 2010. Book your survey now! Call +91 884 896 9743." />
                 <meta name="keywords" content="Land Survey in Kasaragod, RTK Digital Survey Kerala, Boundary Survey Service, Professional Land Measurement" />
             </Helmet>
 
@@ -111,7 +111,7 @@ const Home: React.FC = () => {
                         <h2>Ready to Start Your Survey Project?</h2>
                         <p>Contact our experts today for a free consultation and quote.</p>
                         <div className="cta-actions">
-                            <a href="tel:8848969743" className="btn btn-primary"><PhoneCall size={18} /> Call +91 8848969743</a>
+                            <a href="tel:+918848969743" className="btn btn-primary"><PhoneCall size={18} /> Call +91 884 896 9743</a>
                             <Link to="/contact" className="btn btn-outline-white">Send Inquiry</Link>
                         </div>
                     </div>
@@ -151,7 +151,7 @@ const Home: React.FC = () => {
                         <h2>Quick Inquiry</h2>
                         <p>Need a quick quote or have a question? Leave your details and we'll get back to you within 24 hours.</p>
                         <div className="contact-meta">
-                            <p><PhoneCall size={18} /> <strong>8848969743</strong></p>
+                            <p><PhoneCall size={18} /> <strong>+91 884 896 9743</strong></p>
                             <p><ShieldCheck size={18} /> Certified Professional Surveyors</p>
                         </div>
                     </div>
@@ -176,11 +176,11 @@ const Home: React.FC = () => {
             <section className="map-section">
                 <div className="section-title">
                     <h2>Find Us in Kasaragod</h2>
-                    <p>Souparnika Complex, Kuttikol, Kasaragod, Kerala</p>
+                    <p><a href="https://maps.app.goo.gl/gmPrGLVJfjUk1CYt8" target="_blank" rel="noopener noreferrer" className="map-text-link">Souparnika Complex, Kuttikol, Kasaragod, Kerala</a></p>
                 </div>
                 <div className="map-container">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15582.5!2d75.1!3d12.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba470!2sSouparnika%20Complex%2C%20Kuttikol!5e0!3m2!1sen!2sin!4v1700000000000"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.597809400877!2d75.2103236!3d12.476483199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba489b90920a5fb%3A0x7e08943ca7f2e238!2sDTDC%20Courier%20Kuttikol%2C%20Kasaragod!5e0!3m2!1sen!2sin!4v1772506201450!5m2!1sen!2sin"
                         width="100%"
                         height="450"
                         style={{ border: 0 }}

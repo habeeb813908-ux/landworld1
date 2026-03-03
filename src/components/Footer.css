@@ -80,6 +80,28 @@
     font-size: 0.9rem;
 }
 
+.footer-whatsapp {
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.footer-whatsapp:hover {
+    color: #25d366;
+}
+
+.footer-whatsapp svg {
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.footer-whatsapp:hover svg {
+    color: #25d366;
+    transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
     .footer .grid-3 {
         grid-template-columns: 1fr;
