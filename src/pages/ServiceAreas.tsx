@@ -10,15 +10,16 @@ const ServiceAreas: React.FC = () => {
         { name: "Hosdurg", keyword: "Boundary Survey Service", desc: "Professional boundary identification and property measurement in Hosdurg area." },
         { name: "Manjeshwar", keyword: "Digital Land Survey Kerala", desc: "State-of-the-art digital mapping and land calculation services in Manjeshwar." },
         { name: "Uppala", keyword: "Professional Land Measurement", desc: "Accurate land measurement and site layout marking for Uppala and near regions." },
-        { name: "Kanrawally", keyword: "Digital Land Survey Near Me", desc: "Local surveying experts providing quick and reliable results in Kanrawally." }
+        { name: "Kanrawally", keyword: "Digital Land Survey Near Me", desc: "Local surveying experts providing quick and reliable results in Kanrawally." },
+        { name: "Kalikkadavu", keyword: "Land Survey in Kalikkadavu", desc: "Reliable RTK digital survey and boundary marking services in Kalikkadavu and nearby areas." }
     ];
 
     return (
         <div className="service-areas-page">
             <Helmet>
                 <title>Service Areas | Land Survey in Kasaragod & Kerala</title>
-                <meta name="description" content="We provide professional land survey services in Kasaragod, Kuttikol, Hosdurg, Manjeshwar, and across Kerala. Expert RTK Digital Survey near you." />
-                <meta name="keywords" content="Land Survey in Kasaragod, RTK Survey in Kuttikol, Boundary Survey Kerala, Digital Land Survey Near Me" />
+                <meta name="description" content="We provide professional land survey services in Kasaragod, Kuttikol, Hosdurg, Manjeshwar, Uppala, Kalikkadavu, and across Kerala. Expert RTK Digital Survey near you." />
+                <meta name="keywords" content="Land Survey in Kasaragod, RTK Survey in Kuttikol, Land Survey in Uppala, Land Survey in Kalikkadavu, Boundary Survey Kerala, Digital Land Survey Near Me" />
             </Helmet>
 
             <section className="page-header">

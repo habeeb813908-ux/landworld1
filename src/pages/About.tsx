@@ -80,7 +80,7 @@ const About: React.FC = () => {
                 <div className="container text-center">
                     <MapPin size={48} className="icon-primary" />
                     <h2>Primary Service Area</h2>
-                    <p>Kasaragod, Kuttikol, and surrounding areas in Kerala. We are the local experts you can rely on.</p>
+                    <p>Kasaragod, Kuttikol, Uppala, Kalikkadavu, and surrounding areas in Kerala. We are the local experts you can rely on.</p>
                 </div>
             </section>
         </div>
